@@ -1,0 +1,7 @@
+- correction des images non pertinentes. 
+- correction des informations de contact non vérédiques. 
+- faire un logo simple. 
+- masquer la section avis. 
+- ajouter une section tarifs. 
+- ajouter un bouton flottant. 
+- adapter le fichier css. 

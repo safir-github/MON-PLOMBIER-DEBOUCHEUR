@@ -1,0 +1,13 @@
+# robots.txt — MonPlombierDeboucheur.fr
+# Généré le 2025-01-01
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.monplombierdeboucheur.fr/sitemap.xml
+
+# Pas de répertoires à bloquer sur ce site statique
+# Ajouter ici les éventuels répertoires admin/CMS si applicable
+# Disallow: /wp-admin/
+# Disallow: /wp-login.php
