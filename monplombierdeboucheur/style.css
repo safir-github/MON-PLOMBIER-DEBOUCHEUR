@@ -1966,3 +1966,35 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== MASQUER SECTION AVIS ===== */
+#avis {
+  display: none !important;
+}
+
+/* ===== MASQUER SECTIONS AVIS - Toutes les pages ===== */
+/* Masquer les sections qui contiennent note-globale (section avis) */
+section:has(.note-globale) {
+  display: none !important;
+}
+
+/* Masquer spécifiquement la section avec ID avis */
+#avis {
+  display: none !important;
+}
+
+/* Masquer également les éléments internes de la section avis */
+.note-globale,
+.note-etoiles,
+.note-texte,
+.note-chiffre,
+.avis-grid,
+.avis-card,
+.avis-top,
+.avis-initiales,
+.avis-meta-auth,
+.etoiles-sm,
+.avis-header,
+.mention-google {
+  display: none !important;
+}
