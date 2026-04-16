@@ -4,6 +4,10 @@
 A FAIRE :
 
 - correction des images non pertinentes. 
+- footer
+- menu 
+- header mobile 
+- peut etre logo
 
 
 ------------
@@ -22,8 +26,7 @@ FAIT :
 ------------
 ???? 
 
-- header
-- footer
+
 
 
 
