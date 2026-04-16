@@ -8,13 +8,14 @@ A FAIRE :
 - faire un logo simple. 
 - masquer la section avis. 
 - ajouter une section tarifs. 
-- ajouter un bouton flottant. 
 
 
 ------------
 FAIT :
 
 - adapter le fichier css. (en attente)
+- ajouter un bouton flottant 
+
 
 
 
