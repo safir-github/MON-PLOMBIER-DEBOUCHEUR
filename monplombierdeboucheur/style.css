@@ -1975,6 +1975,13 @@ footer {
     gap: 24px;
   }
 
+  /* Logo du footer même taille que le header sur mobile */
+  .footer-brand img {
+    max-width: none;
+    max-height: 60px;
+    width: auto;
+  }
+
   .champ-rangee {
     grid-template-columns: 1fr;
   }

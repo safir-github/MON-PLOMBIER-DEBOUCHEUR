@@ -4,9 +4,6 @@
 A FAIRE :
 
 
-- footer
-- boutons hero responsive
-- erreur infos formulaire
 - formulaire
 - ftp
 
@@ -25,6 +22,10 @@ FAIT :
 - correction des images non pertinentes. 
 - enlever "avis" du menu
 - header mobile (menu burger à tester une fois le site en ligne)
+- boutons hero responsive
+- footer ajustements
+
+
 
 
 
