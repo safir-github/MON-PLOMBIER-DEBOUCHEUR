@@ -4,17 +4,18 @@
 A FAIRE :
 
 - correction des images non pertinentes. 
-- correction des informations de contact non vérédiques. 
 
 
 ------------
 FAIT :
 
-- adapter le fichier css. (en attente)
+- adapter le fichier css. 
 - ajouter un bouton flottant 
 - masquer la section avis. 
 - ajouter une section tarifs. 
 - faire un logo simple. 
+- correction des informations de contact non vérédiques. 
+
 
 
 
