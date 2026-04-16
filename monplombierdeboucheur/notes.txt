@@ -5,12 +5,11 @@ A FAIRE :
 
 
 - footer
+- boutons hero responsive
 - erreur infos formulaire
 - formulaire
 - ftp
 
-- header mobile 
-- peut etre logo
 
 
 
@@ -25,6 +24,8 @@ FAIT :
 - correction des informations de contact non vérédiques. 
 - correction des images non pertinentes. 
 - enlever "avis" du menu
+- header mobile (menu burger à tester une fois le site en ligne)
+
 
 
 

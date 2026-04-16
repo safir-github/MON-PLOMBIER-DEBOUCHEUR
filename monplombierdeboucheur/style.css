@@ -1880,8 +1880,12 @@ footer {
     display: none;
   }
 
-  #main-nav,
-  .header-tel {
+  #main-nav {
+    display: none;
+  }
+
+  /* Cacher seulement l'icône téléphone seule dans header-mobile-actions */
+  .header-mobile-actions .header-tel-icon {
     display: none;
   }
 
@@ -1889,13 +1893,51 @@ footer {
     display: flex;
   }
 
-  .logo-text>span {
+  .logo-text {
     display: none;
   }
 
+  /* Agrandir le logo sur mobile */
+  .logo-wrap img {
+    max-height: 60px;
+    width: auto;
+  }
+
   .header-inner {
-    gap: 12px;
+    gap: 0;
     height: 58px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 8px;
+  }
+
+  /* Centrer parfaitement le bouton numéro sur mobile */
+  .header-tel {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    z-index: 10;
+  }
+
+  /* Hover du bouton téléphone sur mobile - maintenir le centrage */
+  .header-tel:hover {
+    background: #1255a8;
+    transform: translateX(-50%);
+  }
+
+  /* Ajuster le logo-wrap pour ne pas être caché par le bouton centré */
+  .logo-wrap {
+    z-index: 11;
+    position: relative;
+  }
+
+  /* Ajuster header-mobile-actions pour ne pas être caché par le bouton centré */
+  .header-mobile-actions {
+    z-index: 11;
+    position: relative;
   }
 
   .hero-layout {
