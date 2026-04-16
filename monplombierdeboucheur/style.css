@@ -133,7 +133,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: auto;
+  min-height: 64px;
   gap: 24px;
 }
 
@@ -145,9 +146,12 @@ a {
   flex-shrink: 0;
 }
 
+/* Logo header calibré comme serrureprotect.com : max-height 70px pour s'adapter à la barre de navigation sans déformer, width:auto pour préserver le ratio d'aspect */
 .logo-wrap img {
-  height: 40px;
+  height: auto;
   width: auto;
+  max-height: 70px;
+  max-width: none;
 }
 
 .logo-text strong {
@@ -1771,8 +1775,15 @@ footer {
   margin-bottom: 36px;
 }
 
+.footer-brand {
+  align-self: start;
+}
+
 .footer-brand img {
-  height: 44px;
+  height: auto;
+  width: auto;
+  max-width: 115px;
+  max-height: none;
   margin-bottom: 14px;
 }
 

@@ -5,7 +5,6 @@ A FAIRE :
 
 - correction des images non pertinentes. 
 - correction des informations de contact non vérédiques. 
-- faire un logo simple. 
 
 
 ------------
@@ -15,6 +14,16 @@ FAIT :
 - ajouter un bouton flottant 
 - masquer la section avis. 
 - ajouter une section tarifs. 
+- faire un logo simple. 
+
+
+
+------------
+???? 
+
+- header
+- footer
+
 
 
 
