@@ -6,7 +6,6 @@ A FAIRE :
 - correction des images non pertinentes. 
 - correction des informations de contact non vérédiques. 
 - faire un logo simple. 
-- ajouter une section tarifs. 
 
 
 ------------
@@ -15,6 +14,8 @@ FAIT :
 - adapter le fichier css. (en attente)
 - ajouter un bouton flottant 
 - masquer la section avis. 
+- ajouter une section tarifs. 
+
 
 
 

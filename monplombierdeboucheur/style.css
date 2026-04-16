@@ -987,6 +987,16 @@ h2.titre {
   line-height: 1.65;
 }
 
+.prix-service {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--gris-bord);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--bleu-vif);
+  text-align: center;
+}
+
 /* ===== POURQUOI ===== */
 #pourquoi {
   position: relative;
