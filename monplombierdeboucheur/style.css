@@ -1990,6 +1990,11 @@ footer {
 
   .hero-actions {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-actions a {
+    width: auto;
   }
 
   .hero-points {
