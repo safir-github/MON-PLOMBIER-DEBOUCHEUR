@@ -3,11 +3,15 @@
 ------------
 A FAIRE :
 
-- correction des images non pertinentes. 
+
 - footer
-- menu 
+- erreur infos formulaire
+- formulaire
+- ftp
+
 - header mobile 
 - peut etre logo
+
 
 
 ------------
@@ -19,6 +23,10 @@ FAIT :
 - ajouter une section tarifs. 
 - faire un logo simple. 
 - correction des informations de contact non vérédiques. 
+- correction des images non pertinentes. 
+- enlever "avis" du menu
+
+
 
 
 

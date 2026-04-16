@@ -225,6 +225,11 @@ a {
   transform: translateX(-50%) scaleX(1);
 }
 
+/* Masquer l'élément "avis" du menu desktop */
+#main-nav a[data-section="avis"] {
+  display: none;
+}
+
 /* CTA téléphone */
 .header-tel {
   display: flex;
@@ -400,6 +405,11 @@ a {
   background: #1255a8;
   border-left-color: transparent;
   transform: translateY(-1px);
+}
+
+/* Masquer l'élément "avis" du menu mobile */
+.mobile-nav a[data-section="avis"] {
+  display: none;
 }
 
 /* ===== HERO ===== */
