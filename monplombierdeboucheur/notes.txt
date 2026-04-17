@@ -4,15 +4,12 @@
 A FAIRE :
 
 
-
-
-
-
-
-- retirer la page contact 
-- header et footer des pages legales
-- corriger la page merci
 - favicon
+
+
+
+
+
 
 
 
@@ -40,6 +37,10 @@ FAIT :
 - fond de contact en gris
 - bug boutons zone intervention
 - déplacer les cta des faq
+- retirer la page contact 
+- header et footer des pages legales
+- corriger la page merci
+
 
 
 
@@ -61,6 +62,9 @@ MISE A JOUR
 index
 les 6 pages 
 main js 
+merci 
+pages legales 
+css
 
 
 
