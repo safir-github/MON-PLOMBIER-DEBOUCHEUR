@@ -135,12 +135,11 @@ async function envoyerHeroForm(e) {
   const ville = form.querySelector('[id^="h-ville"], [name="ville"]').value.trim();
   const service = form.querySelector('[id^="h-service"], [name="service"]').value;
 
-  // Validation téléphone
-  const tel = telInput.value.replace(/[^0-9]/g, '');
-  if (tel.length < 10 || tel.length > 11 || !tel.match(/^0[67]/)) {
-    showFormError(form, 'Téléphone invalide (format 06/07 requis)');
-    return;
-  }
+  // Nettoyage téléphone (accepte tout pour Google Ads - pas de blocage)
+  const telClean = tel.replace(/[^0-9]/g, '');
+
+  // NOTE : Validation retirée pour ne pas bloquer les soumissions Google Ads
+  // Le téléphone est quand même nettoyé (gardé chiffres seulement)
 
   if (nom.length < 2) {
     showFormError(form, 'Veuillez entrer votre nom complet');
@@ -222,11 +221,11 @@ async function envoyerForm(e) {
     return;
   }
 
+  // Nettoyage téléphone (accepte tout pour Google Ads - pas de blocage)
   const tel = telInput.value.replace(/[^0-9]/g, '');
-  if (tel.length < 10 || !tel.match(/^0[67]/)) {
-    showFormError(form, 'Téléphone invalide (format 06/07)');
-    return;
-  }
+
+  // NOTE : Validation retirée pour ne pas bloquer les soumissions Google Ads
+  // Le téléphone est quand même nettoyé (gardé chiffres seulement)
 
   if (dept && dept.value === '') {
     showFormError(form, 'Veuillez sélectionner votre département');

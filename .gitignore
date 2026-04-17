@@ -1,0 +1,13 @@
+# Fichiers et dossiers de sauvegarde
+monplombierdeboucheur/SAUVEGARDES/
+
+# Fichiers volumineux
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Fichiers système
+.DS_Store
+Thumbs.db
