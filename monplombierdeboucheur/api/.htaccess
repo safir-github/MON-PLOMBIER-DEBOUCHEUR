@@ -1,0 +1,16 @@
+# Protection du dossier API
+# Interdire l'accès direct aux fichiers PHP
+<FilesMatch "\.php$">
+    Require all denied
+</FilesMatch>
+
+# Autoriser uniquement les requêtes POST
+<LimitExcept POST>
+    Require all denied
+</LimitExcept>
+
+# Désactiver la signature du serveur
+ServerSignature Off
+
+# Options de sécurité
+Options -Indexes

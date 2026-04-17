@@ -1,0 +1,81 @@
+# =============================================================================
+# Configuration Sécurité et Performance - MonPlombierDeboucheur.fr
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Forcer HTTPS (Redirection 301)
+# -----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# Protection des répertoires
+# -----------------------------------------------------------------------------
+# Interdire le listage des répertoires
+Options -Indexes
+
+# Interdire l'accès aux fichiers sensibles
+<FilesMatch "^(config\.php|\.env|\.git|composer\.json|package-lock\.json)$">
+  Require all denied
+</FilesMatch>
+
+# Protéger les répertoires logs et api
+<IfModule mod_authz_core.c>
+  <DirectoryMatch "^(logs|api)/">
+    Require all denied
+  </DirectoryMatch>
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# Headers de sécurité
+# -----------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  # Protection contre le clickjacking
+  Header set X-Frame-Options "SAMEORIGIN"
+
+  # Protection contre le sniffing de type MIME
+  Header set X-Content-Type-Options "nosniff"
+
+  # Protection XSS navigateur
+  Header set X-XSS-Protection "1; mode=block"
+
+  # Politique de référent
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # HSTS (HTTP Strict Transport Security) - 6 mois
+  Header set Strict-Transport-Security "max-age=15768000; includeSubDomains"
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# Compression GZIP
+# -----------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# Cache navigateur pour les fichiers statiques
+# -----------------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# Désactiver la signature du serveur
+# -----------------------------------------------------------------------------
+ServerSignature Off
+ServerTokens Prod
