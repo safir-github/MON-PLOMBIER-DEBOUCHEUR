@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales – Mon Plombier Déboucheur</title>
+  <meta name="description" content="Mentions légales du site Mon Plombier Déboucheur, conformément à la loi LCEN du 21 juin 2004." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://monplombierdeboucheur.fr/mentions-legales.html" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: #222; background: #fff; line-height: 1.65; font-size: 15px; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    :root {
+      --bleu: #2563eb;
+      --bleu-vif: #3b82f6;
+      --bleu-sombre: #1d4ed8;
+      --bleu-clair: #dbeafe;
+      --noir: #0f172a;
+      --noir-doux: #1e293b;
+      --gris-bg: #f8fafc;
+      --gris-bord: #e2e8f0;
+      --texte: #334155;
+      --texte-doux: #64748b;
+    }
+
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--noir);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+      border-bottom: 2px solid var(--bleu-vif);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between; height: 70px;
+    }
+    .logo-wrap { display: flex; align-items: center; gap: 12px; }
+    .logo-wrap img { height: 40px; width: auto; border-radius: 4px; }
+    .logo-text strong { display: block; color: #fff; font-size: 1rem; font-weight: 700; line-height: 1.2; }
+    nav { display: flex; align-items: center; gap: 28px; }
+    nav a { color: rgba(255,255,255,0.8); font-size: 0.875rem; font-weight: 500; transition: color 0.18s; }
+    nav a:hover { color: #fff; }
+    .header-tel {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--bleu-vif); color: #fff;
+      font-weight: 600; font-size: 0.9rem;
+      padding: 9px 18px; border-radius: 4px;
+      transition: background 0.18s; white-space: nowrap;
+    }
+    .header-tel:hover { background: var(--bleu-sombre); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
+    .mobile-nav { display: none; flex-direction: column; background: var(--noir); border-top: 1px solid rgba(255,255,255,0.1); }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { color: #94a3b8; font-size: 0.9rem; padding: 13px 28px; border-bottom: 1px solid rgba(255,255,255,0.06); font-weight: 500; transition: color 0.18s; }
+    .mobile-nav a:hover { color: #fff; }
+
+    /* PAGE CONTENT */
+    .page-hero {
+      background: var(--noir-doux);
+      padding: 120px 0 60px;
+      text-align: center;
+    }
+    .page-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .page-hero p { color: rgba(255,255,255,0.55); font-size: 0.9rem; }
+
+    .legal-content {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 28px 80px;
+    }
+    .legal-content section { margin-bottom: 42px; }
+    .legal-content h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--noir);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--bleu-clair);
+    }
+    .legal-content p { color: var(--texte); margin-bottom: 12px; }
+    .legal-content p:last-child { margin-bottom: 0; }
+    .legal-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+    .legal-content th, .legal-content td {
+      border: 1px solid var(--gris-bord);
+      padding: 10px 14px;
+      text-align: left;
+    }
+    .legal-content th { background: var(--gris-bg); font-weight: 600; }
+    .legal-content ul { margin: 12px 0; padding-left: 22px; }
+    .legal-content li { margin-bottom: 8px; color: var(--texte); }
+    .legal-content strong { color: var(--noir); font-weight: 600; }
+
+    /* FOOTER */
+    footer {
+      background: var(--noir);
+      color: #94a3b8;
+      padding: 48px 0 0;
+      border-top: 3px solid var(--bleu-vif);
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+    }
+    .footer-brand p { font-size: 0.85rem; color: #64748b; margin: 14px 0 18px; line-height: 1.7; }
+    .footer-tel-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--bleu-vif); color: #fff;
+      padding: 10px 18px; border-radius: 4px;
+      font-size: 0.85rem; font-weight: 700;
+      transition: background 0.2s;
+    }
+    .footer-tel-cta:hover { background: var(--bleu); }
+    .footer-col h4 { font-size: 0.8rem; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 8px; }
+    .footer-col ul a { color: #94a3b8; font-size: 0.85rem; transition: color 0.2s; }
+    .footer-col ul a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: #64748b;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-bottom a { color: var(--bleu-vif); transition: color 0.2s; }
+    .footer-bottom a:hover { color: #fff; }
+
+    /* Bouton flottant */
+    .btn-flottant {
+      position: fixed; bottom: 24px; right: 24px; z-index: 200;
+      display: flex; align-items: center; gap: 10px;
+      background: var(--bleu-vif); color: #fff;
+      padding: 14px 22px; border-radius: 50px;
+      font-weight: 700; font-size: 0.9rem;
+      box-shadow: 0 4px 20px rgba(37,99,235,0.4);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-flottant:hover { background: var(--bleu); transform: translateY(-2px); }
+    .pulse {
+      position: absolute; top: -4px; right: -4px;
+      width: 14px; height: 14px;
+      background: #22c55e; border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    @media (max-width: 1024px) {
+      .footer-top { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .logo-text { display: none; }
+      .header-inner { position: relative; justify-content: space-between; }
+      .header-tel {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .footer-top { grid-template-columns: 1fr; }
+      .legal-content { padding: 40px 20px 60px; }
+      .btn-flottant .tel-label { display: none; }
+      .btn-flottant { padding: 16px; border-radius: 50%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo-wrap" aria-label="Mon Plombier Déboucheur — Accueil">
+        <img src="logo.png" alt="Logo Mon Plombier Déboucheur" width="40" height="40" loading="eager" />
+        <div class="logo-text">
+          <strong>Mon Plombier Déboucheur</strong>
+        </div>
+      </a>
+      <nav aria-label="Navigation principale">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#tarifs">Tarifs</a>
+        <a href="index.html#temoignages">Avis</a>
+        <a href="index.html#about">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="tel:0642561671" class="header-tel" aria-label="Appeler le 06 42 56 16 71">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>06 42 56 16 71</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html#services">Services</a>
+    <a href="index.html#tarifs">Tarifs</a>
+    <a href="index.html#temoignages">Avis</a>
+    <a href="index.html#about">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:0642561671" style="color:#fff;font-weight:700;background:var(--bleu-vif);padding:14px 28px;display:flex;align-items:center;gap:8px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      06 42 56 16 71
+    </a>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Mentions légales</h1>
+      <p>Conformément à la loi LCEN du 21 juin 2004</p>
+    </div>
+  </section>
+
+  <div class="legal-content">
+    <section>
+      <h2>1. Éditeur du site</h2>
+      <p>Le présent site est édité par :</p>
+      <table>
+        <tr>
+          <th><strong>Dénomination sociale</strong></th>
+          <td>[À compléter]</td>
+        </tr>
+        <tr>
+          <th><strong>Forme juridique</strong></th>
+          <td>[SARL / SASU / Auto-entrepreneur – à compléter]</td>
+        </tr>
+        <tr>
+          <th><strong>Capital social</strong></th>
+          <td>[Montant – si applicable]</td>
+        </tr>
+        <tr>
+          <th><strong>Adresse du siège</strong></th>
+          <td>[Adresse complète – à compléter]</td>
+        </tr>
+        <tr>
+          <th><strong>SIRET</strong></th>
+          <td>[Numéro SIRET – à compléter]</td>
+        </tr>
+        <tr>
+          <th><strong>TVA intracommunautaire</strong></th>
+          <td>[Numéro TVA – si applicable]</td>
+        </tr>
+        <tr>
+          <th><strong>Numéro RCS</strong></th>
+          <td>[Ville d'immatriculation – à compléter]</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>2. Contact</h2>
+      <table>
+        <tr>
+          <th><strong>Téléphone</strong></th>
+          <td>06 42 56 16 71</td>
+        </tr>
+        <tr>
+          <th><strong>Email</strong></th>
+          <td><a href="mailto:contact@monplombierdeboucheur.fr">contact@monplombierdeboucheur.fr</a></td>
+        </tr>
+        <tr>
+          <th><strong>Site web</strong></th>
+          <td>https://monplombierdeboucheur.fr</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. Hébergement</h2>
+      <p>Le site est hébergé par :</p>
+      <table>
+        <tr>
+          <th><strong>Prestataire</strong></th>
+          <td>o2switch</td>
+        </tr>
+        <tr>
+          <th><strong>Adresse</strong></th>
+          <td>Chemin des Papes, BP 50173, 67303 Strasbourg Cedex 3, France</td>
+        </tr>
+        <tr>
+          <th><strong>Téléphone</strong></th>
+          <td>+33 (0)9 72 67 44 44</td>
+        </tr>
+        <tr>
+          <th><strong>Site web</strong></th>
+          <td><a href="https://www.o2switch.fr" target="_blank" rel="noopener">www.o2switch.fr</a></td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>4. Directeur de la publication</h2>
+      <p>Le directeur de la publication est :</p>
+      <p><strong>[Nom du responsable – à compléter]</strong><br />
+      Fonction : [Gérant / Responsable – à compléter]<br />
+      Contact : <a href="mailto:contact@monplombierdeboucheur.fr">contact@monplombierdeboucheur.fr</a></p>
+    </section>
+
+    <section>
+      <h2>5. Propriété intellectuelle</h2>
+      <p>L'ensemble du contenu de ce site (textes, images, vidéos, logos, etc.) est protégé par le droit d'auteur. Toute reproduction, même partielle, est interdite sans autorisation préalable.</p>
+      <p>Le logo et la charte graphique de <strong>Mon Plombier Déboucheur</strong> sont des marques déposées ou non déposées. Toute reproduction ou imitation est interdite.</p>
+    </section>
+
+    <section>
+      <h2>6. Protection des données personnelles</h2>
+      <p>Les données collectées via les formulaires de contact sont traitées conformément au Règlement Général sur la Protection des Données (RGPD). Pour plus d'informations, consultez notre <a href="politique-cookies.html">Politique de confidentialité</a>.</p>
+      <p>Vos données ne sont jamais transmises à des tiers sans votre consentement explicite.</p>
+    </section>
+
+    <section>
+      <h2>7. Cookies</h2>
+      <p>Ce site utilise des cookies techniques nécessaires au bon fonctionnement du site (gestion des formulaires, sécurité). Aucun cookie publicitaire ou de tracking n'est utilisé sans votre consentement.</p>
+      <p>Pour en savoir plus, consultez notre <a href="politique-cookies.html">Politique de cookies</a>.</p>
+    </section>
+
+    <section>
+      <h2>8. Limitation de responsabilité</h2>
+      <p>Nous mettons tout en œuvre pour fournir des informations exactes et à jour. Cependant, nous ne pouvons garantir l'exactitude, la complétude ou l'actualité des informations diffusées.</p>
+      <p>En conséquence, nous déclinons toute responsabilité :</p>
+      <ul>
+        <li>Pour toute interruption du site</li>
+        <li>Pour toute inexactitude ou omission dans les informations présentées</li>
+        <li>Pour tous dommages directs ou indirects résultant de l'utilisation du site</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. Liens hypertextes</h2>
+      <p>Les liens vers des sites tiers sont proposés à titre informatif. Nous n'exerçons aucun contrôle sur ces sites et déclinons toute responsabilité quant à leur contenu.</p>
+    </section>
+
+    <section>
+      <h2>10. Droit applicable et juridiction</h2>
+      <p>Le présent site est soumis au droit français. En cas de litige, les tribunaux français seront seuls compétents.</p>
+    </section>
+
+    <section>
+      <h2>11. Loi informatique et libertés</h2>
+      <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant. Pour exercer ce droit, contactez-nous à l'adresse : <a href="mailto:contact@monplombierdeboucheur.fr">contact@monplombierdeboucheur.fr</a>.</p>
+    </section>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <img src="logo.png" alt="Mon Plombier Déboucheur" width="36" height="36" loading="lazy" style="border-radius:4px;" />
+          <div class="logo-text">
+            <strong>Mon Plombier Déboucheur</strong>
+          </div>
+        </div>
+        <p>Votre plombier de confiance en Bretagne et Pays de la Loire. Intervention rapide 24h/24, 7j/7 pour tous vos problèmes de plomberie et débouchage.</p>
+        <a href="tel:0642561671" class="footer-tel-cta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Urgence : 06 42 56 16 71
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#tarifs">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Départements</h4>
+        <ul>
+          <li><a href="plombier-deboucheur-ille-et-vilaine.html">Ille-et-Vilaine (35)</a></li>
+          <li><a href="plombier-deboucheur-finistere.html">Finistère (29)</a></li>
+          <li><a href="plombier-deboucheur-cotes-darmor.html">Côtes-d'Armor (22)</a></li>
+          <li><a href="plombier-deboucheur-morbihan.html">Morbihan (56)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Région</h4>
+        <ul>
+          <li><a href="plombier-deboucheur-loire-atlantique.html">Loire-Atlantique (44)</a></li>
+          <li><a href="plombier-deboucheur-mayenne.html">Mayenne (53)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-cookies.html">Politique de cookies</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Mon Plombier Déboucheur. Tous droits réservés.</span>
+      <span>Plombier & Déboucheur — Bretagne & Pays de la Loire</span>
+    </div>
+  </div>
+</footer>
+
+<!-- BOUTON FLOTTANT -->
+<a href="tel:0642561671" class="btn-flottant" aria-label="Appeler le 06 42 56 16 71 — urgence plomberie">
+  <div class="pulse" aria-hidden="true"></div>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  <span class="tel-label">06 42 56 16 71</span>
+</a>
+
+<script>
+  // Header hamburger
+  var ham = document.getElementById('hamburger');
+  var nav = document.getElementById('mobileNav');
+  if (ham) {
+    ham.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      ham.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+
+</body>
+</html>

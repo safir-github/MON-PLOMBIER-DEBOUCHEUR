@@ -173,22 +173,9 @@ async function envoyerHeroForm(e) {
     const result = await response.json();
 
     if (result.success) {
-      // Succès
-      btn.textContent = 'Envoyé ! On vous rappelle.';
-      btn.style.backgroundColor = '#28a745';
-      form.reset();
-
-      // Mettre à jour le token CSRF
-      if (result.csrf_token) {
-        localStorage.setItem('csrf_token', result.csrf_token);
-      }
-
-      // Réinitialiser le bouton après 3 secondes
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        btn.style.backgroundColor = '';
-      }, 3000);
+      // Succès - Rediriger vers la page merci
+      window.location.href = 'merci.html';
+      return; // Important : arrêter l'exécution ici
     } else {
       // Erreur
       showFormError(form, result.message || 'Erreur lors de l\'envoi');
@@ -282,19 +269,9 @@ async function envoyerForm(e) {
     const result = await response.json();
 
     if (result.success) {
-      btn.textContent = 'Demande envoyée — réponse sous 5 min';
-      btn.style.backgroundColor = '#28a745';
-      form.reset();
-
-      if (result.csrf_token) {
-        localStorage.setItem('csrf_token', result.csrf_token);
-      }
-
-      setTimeout(() => {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        btn.style.backgroundColor = '';
-      }, 5000);
+      // Succès - Rediriger vers la page merci
+      window.location.href = 'merci.html';
+      return; // Important : arrêter l'exécution ici
     } else {
       showFormError(form, result.message || 'Erreur lors de l\'envoi');
       btn.textContent = originalText;

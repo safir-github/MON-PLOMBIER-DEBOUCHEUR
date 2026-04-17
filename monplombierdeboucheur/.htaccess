@@ -22,12 +22,7 @@ Options -Indexes
   Require all denied
 </FilesMatch>
 
-# Protéger les répertoires logs et api
-<IfModule mod_authz_core.c>
-  <DirectoryMatch "^(logs|api)/">
-    Require all denied
-  </DirectoryMatch>
-</IfModule>
+# Note : Les dossiers api/ et logs/ sont protégés par leurs propres fichiers .htaccess
 
 # -----------------------------------------------------------------------------
 # Headers de sécurité

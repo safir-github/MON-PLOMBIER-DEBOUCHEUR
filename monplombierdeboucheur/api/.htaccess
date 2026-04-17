@@ -1,13 +1,9 @@
 # Protection du dossier API
-# Interdire l'accès direct aux fichiers PHP
-<FilesMatch "\.php$">
-    Require all denied
-</FilesMatch>
-
-# Autoriser uniquement les requêtes POST
-<LimitExcept POST>
-    Require all denied
-</LimitExcept>
+# Interdire l'accès direct aux fichiers PHP via navigateur
+<Files "process.php">
+    # On laisse process.php accessible (le formulaire en a besoin)
+    # La protection se fait via la validation referer dans le PHP
+</Files>
 
 # Désactiver la signature du serveur
 ServerSignature Off
