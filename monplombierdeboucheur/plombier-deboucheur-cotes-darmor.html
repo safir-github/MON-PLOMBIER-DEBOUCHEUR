@@ -66,7 +66,8 @@
         <div class="hero-form-wrap">
           <h3>Intervention dans le 22</h3>
           <p>Rappel rapide garanti</p>
-          <input type="text" name="website" style="display:none !important" tabindex="-1" autocomplete="off"><form onsubmit="envoyerHeroForm(event)">
+          <input type="text" name="website" style="display:none !important" tabindex="-1" autocomplete="off">
+          <form onsubmit="envoyerHeroForm(event)">
             <div class="champ"><label for="h-nom">Nom &amp; prénom *</label><input type="text" id="h-nom" name="nom"
                 placeholder="Morgane Lebrun" required></div>
             <div class="champ"><label for="h-tel">Téléphone *</label><input type="tel" id="h-tel" name="tel"
@@ -105,6 +106,7 @@
 
   <!-- PRÉSENTATION -->
   <section class="section-pad" style="background:#fff;">
+
     <div class="container">
       <div class="presentation-grid">
         <div class="imgs-group">
@@ -130,7 +132,18 @@
             <div class="chiffre"><strong>Rapide</strong><span>délai moyen département</span></div>
             <div class="chiffre"><strong>100%</strong><span>chantiers nettoyés</span></div>
           </div>
-        </div>
+        
+          <div style="display:flex;gap:12px;margin-top:30px;flex-wrap:wrap;">
+            <a href="tel:0642561671" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;transition:background 0.2s;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              Contactez-nous
+            </a>
+            <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--bleu-vif);padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;border:2px solid var(--bleu-vif);transition:background 0.2s;">
+              Demander un devis
+            </a>
+          </div></div>
       </div>
     </div>
   </section>
@@ -212,20 +225,34 @@
           </div>
         </div>
         <div class="card-service">
-          <img src="images_services/salle de bain.webp" data-img="h-plombier (6).webp" alt="Sanitaire 22"
+          <img src="images_services/chauffe-eau.webp" data-img="h-plombier (4).webp" alt="Chauffe-eau Côtes-d'Armor"
             loading="lazy">
           <div class="card-corps">
             <div class="card-icone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="10" rx="2" />
-                <path d="M7 11V6a5 5 0 0110 0v5" />
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
               </svg></div>
-            <h3>Installation sanitaire</h3>
-            <p>Remplacement de chauffe-eau, rénovation salle de bain, nouvelles évacuations — travaux propres et
-              garantis dans le 22.</p>
+            <h3>Chauffe-eau &amp; ballon</h3>
+            <p>Remplacement et installation de chauffe-eau électrique ou thermodynamique à Saint-Brieuc, Guingamp,
+              Lamballe.</p>
           </div>
         </div>
       </div>
+    </div>
+    <div style="display:flex;gap:12px;justify-content:center;margin-top:40px;flex-wrap:wrap;">
+      <a href="tel:0642561671"
+        style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;transition:background 0.2s;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+        </svg>
+        Contactez-nous
+      </a>
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--bleu-vif);padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;border:2px solid var(--bleu-vif);transition:background 0.2s;">
+        Demander un devis
+      </a>
     </div>
   </section>
 
@@ -276,6 +303,17 @@
           <p>Maisons en granit, installations vieillissantes — nos plombiers connaissent les spécificités du 22.</p>
         </div>
       </div>
+      <div style="display:flex;gap:12px;justify-content:center;margin-top:40px;flex-wrap:wrap;">
+        <a href="tel:0642561671" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;transition:background 0.2s;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          Contactez-nous
+        </a>
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--bleu-vif);padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;border:2px solid var(--bleu-vif);transition:background 0.2s;">
+          Demander un devis
+        </a>
+      </div>
     </div>
   </section>
 
@@ -320,8 +358,19 @@
               <div class="ville-dot"></div>Rostrenen
             </div>
           </div>
-          <div class="note-zone">Zone rurale ou bourg côtier ? Appelez — on confirme le délai honnêtement par téléphone.
-          </div>
+          <div style="display:flex;gap:12px;justify-content:center;margin-top:30px;flex-wrap:wrap;">
+            <a href="tel:0642561671"
+              style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;transition:background 0.2s;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              Appelez-nous
+            </a>
+          <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--bleu-vif);padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;border:2px solid var(--bleu-vif);transition:background 0.2s;">
+            Demander un devis
+          </a></div>
         </div>
         <div class="zone-img">
           <img src="images_plomberie/bg-plombier (4).webp" data-img="bg-plombier (4).webp"
@@ -400,7 +449,12 @@
             <h3>Débouchage WC</h3>
             <p>WC qui remonte ou qui n'évacue plus normalement. Intervention rapide avec le bon matériel, sans démontage
               inutile.</p>
-            <div class="prix-service">Sur devis</div>
+            <a href="tel:0642561671" class="btn-tarif-contact" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:12px 24px;border-radius:6px;font-size:0.95rem;font-weight:700;text-decoration:none;transition:background 0.2s;margin-top:12px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          Contactez-nous
+        </a>
           </div>
         </div>
         <div class="card-service">
@@ -413,7 +467,12 @@
             <h3>Hydrocurage haute pression</h3>
             <p>Idéal pour les canalisations d'évacuation engorgées par la graisse ou le calcaire. On travaille de
               l'intérieur, sans casse.</p>
-            <div class="prix-service">Sur devis</div>
+            <a href="tel:0642561671" class="btn-tarif-contact" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:12px 24px;border-radius:6px;font-size:0.95rem;font-weight:700;text-decoration:none;transition:background 0.2s;margin-top:12px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          Contactez-nous
+        </a>
           </div>
         </div>
         <div class="card-service">
@@ -425,7 +484,12 @@
             <h3>Urgences 24h/24</h3>
             <p>Notre ligne reste ouverte nuit et jour pour les habitants de Guingamp, Lamballe, Paimpol et tout le 22.
             </p>
-            <div class="prix-service">Sur devis</div>
+            <a href="tel:0642561671" class="btn-tarif-contact" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:12px 24px;border-radius:6px;font-size:0.95rem;font-weight:700;text-decoration:none;transition:background 0.2s;margin-top:12px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          Contactez-nous
+        </a>
           </div>
         </div>
         <div class="card-service">
@@ -438,7 +502,12 @@
             <h3>Inspection caméra</h3>
             <p>Caméra endoscopique pour identifier précisément l'origine d'un bouchon récurrent avant de choisir la
               solution.</p>
-            <div class="prix-service">Sur devis</div>
+            <a href="tel:0642561671" class="btn-tarif-contact" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:12px 24px;border-radius:6px;font-size:0.95rem;font-weight:700;text-decoration:none;transition:background 0.2s;margin-top:12px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          Contactez-nous
+        </a>
           </div>
         </div>
         <div class="card-service">
@@ -450,35 +519,32 @@
             <h3>Réparation fuite d'eau</h3>
             <p>Joint qui lâche, robinetterie endommagée, tuyau fissuré — réparation définitive, garantie sur la
               main-d'œuvre.</p>
-            <div class="prix-service">Sur devis</div>
+            <a href="tel:0642561671" class="btn-tarif-contact" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:12px 24px;border-radius:6px;font-size:0.95rem;font-weight:700;text-decoration:none;transition:background 0.2s;margin-top:12px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          Contactez-nous
+        </a>
           </div>
         </div>
         <div class="card-service">
           <div class="card-corps">
             <div class="card-icone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="10" rx="2" />
-                <path d="M7 11V6a5 5 0 0110 0v5" />
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
               </svg></div>
-            <h3>Installation sanitaire</h3>
-            <p>Remplacement de chauffe-eau, rénovation salle de bain, nouvelles évacuations — travaux propres et
-              garantis dans le 22.</p>
-            <div class="prix-service">Sur devis</div>
+            <h3>Chauffe-eau &amp; ballon</h3>
+            <p>Remplacement et installation de chauffe-eau électrique ou thermodynamique à Saint-Brieuc, Guingamp,
+              Lamballe.</p>
+            <a href="tel:0642561671" class="btn-tarif-contact" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:12px 24px;border-radius:6px;font-size:0.95rem;font-weight:700;text-decoration:none;transition:background 0.2s;margin-top:12px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          Contactez-nous
+        </a>
           </div>
         </div>
-      </div>
-      <div style="text-align:center;margin-top:40px;">
-        <p style="color:var(--texte);font-size:15px;">Tous nos tarifs sont établis sur devis selon l'urgence et le
-          matériel nécessaire.</p>
-        <a href="tel:0642561671"
-          style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:var(--bleu-vif);color:#fff;font-weight:700;padding:14px 24px;border-radius:6px;border:none;text-decoration:none;transition:background 0.18s;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-          </svg>
-          Demander un devis
-        </a>
       </div>
     </div>
   </section>
@@ -532,14 +598,24 @@
                 exact est communiqué gratuitement avant déplacement, quel que soit votre secteur dans le 22.</div>
             </div>
           </div>
-        </div>
-        <div class="faq-img">
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;flex-wrap:wrap;">
+      <a href="tel:0642561671" style="display:inline-flex;align-items:center;gap:10px;background:var(--bleu-vif);color:#fff;padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;transition:background 0.2s;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+        </svg>
+        Contactez-nous
+      </a>
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--bleu-vif);padding:14px 28px;border-radius:6px;font-size:1rem;font-weight:700;text-decoration:none;border:2px solid var(--bleu-vif);transition:background 0.2s;">
+        Demander un devis
+      </a>
+    </div>
+  </div>
+    <div class="faq-img">
           <img src="images_plomberie/h-plombier (8).webp" data-img="h-plombier (8).webp"
             alt="Plombier déboucheur Côtes-d'Armor" loading="lazy">
         </div>
       </div>
-    </div>
-  </section>
+        </section>
 
   <!-- CONTACT -->
   <section class="section-pad" style="background:var(--gris-bg);" id="contact">
@@ -551,14 +627,17 @@
       </div>
       <div class="contact-layout">
         <div class="contact-infos">
-          <div class="info-ligne">
-            <div class="info-icone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-              </svg></div>
-            <div class="info-texte"><strong>Téléphone</strong><span>06 42 56 16 71</span></div>
-          </div>
+          <a href="tel:0642561671" class="info-ligne-link"
+            style="display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;">
+            <div class="info-ligne">
+              <div class="info-icone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                </svg></div>
+              <div class="info-texte"><strong>Téléphone</strong><span>06 42 56 16 71</span></div>
+            </div>
+          </a>
           <div class="info-ligne">
             <div class="info-icone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -595,7 +674,8 @@
         </div>
         <div class="formulaire">
           <h3>Rappel rapide garanti</h3>
-          <input type="text" name="website" style="display:none !important" tabindex="-1" autocomplete="off"><form onsubmit="envoyerForm(event)">
+          <input type="text" name="website" style="display:none !important" tabindex="-1" autocomplete="off">
+          <form onsubmit="envoyerForm(event)">
             <div class="champ-rangee">
               <div class="champ"><label for="c-prenom">Prénom *</label><input type="text" id="c-prenom" name="prenom"
                   placeholder="Morgane" required></div>
@@ -627,8 +707,7 @@
           </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <div id="footer-placeholder"></div>
 

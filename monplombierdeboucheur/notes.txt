@@ -5,16 +5,14 @@ A FAIRE :
 
 
 
-- declancher une erreur quand on se trompe dans le numéro 
-- a chaque section double cta 
-- section tarif mettre "contactez-nous" en étant cliquable avec le numéro de téléphone.
-- renovation salle de bain à retirer 
-- l'icone de tel doit etre cliquable dans la section contact 
+
+
 
 
 - retirer la page contact 
 - header et footer des pages legales
 - corriger la page merci
+- favicon
 
 
 
@@ -34,6 +32,20 @@ FAIT :
 - footer ajustements
 - système d'envoie de formulaire
 
+- declancher une erreur quand on se trompe dans le numéro (à tester)
+- l'icone de tel doit etre cliquable dans la section contact 
+- renovation salle de bain à retirer 
+- section tarif mettre "contactez-nous" en étant cliquable avec le numéro de téléphone
+- a chaque section double cta (non)
+- fond de contact en gris
+- bug boutons zone intervention
+- déplacer les cta des faq
+
+
+
+
+
+
 
 
 
@@ -44,7 +56,11 @@ FAIT :
 
 
 ------------
-???? 
+MISE A JOUR 
+
+index
+les 6 pages 
+main js 
 
 
 
