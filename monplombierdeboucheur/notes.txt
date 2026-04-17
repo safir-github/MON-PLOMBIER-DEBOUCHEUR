@@ -4,9 +4,17 @@
 A FAIRE :
 
 
-- formulaire
-- ftp
 
+- declancher une erreur quand on se trompe dans le numéro 
+- a chaque section double cta 
+- section tarif mettre "contactez-nous" en étant cliquable avec le numéro de téléphone.
+- renovation salle de bain à retirer 
+- l'icone de tel doit etre cliquable dans la section contact 
+
+
+- retirer la page contact 
+- header et footer des pages legales
+- corriger la page merci
 
 
 
@@ -24,6 +32,8 @@ FAIT :
 - header mobile (menu burger à tester une fois le site en ligne)
 - boutons hero responsive
 - footer ajustements
+- système d'envoie de formulaire
+
 
 
 

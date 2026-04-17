@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merci pour votre demande – Mon Plombier Déboucheur</title>
+  <meta name="description" content="Votre demande a bien été reçue. Nous vous répondons dans les plus brefs délais." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://monplombierdeboucheur.fr/merci.html" />
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       TRACKING — coller ici les balises de conversion
+       Google Ads : event_snippet ou gtag('event', 'conversion', {...})
+       Google Analytics 4 : gtag('event', 'generate_lead', {...})
+       Meta Pixel : fbq('track', 'Lead')
+  ============================================================ -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: #222; background: #fff; line-height: 1.65; font-size: 15px; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    :root {
+      --bleu: #2563eb;
+      --bleu-vif: #3b82f6;
+      --bleu-sombre: #1d4ed8;
+      --bleu-clair: #dbeafe;
+      --noir: #0f172a;
+      --noir-doux: #1e293b;
+      --gris-bg: #f8fafc;
+      --gris-bord: #e2e8f0;
+      --texte: #334155;
+      --texte-doux: #64748b;
+    }
+
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--noir);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+      border-bottom: 2px solid var(--bleu-vif);
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between; height: 70px;
+    }
+    .logo-wrap { display: flex; align-items: center; gap: 12px; }
+    .logo-wrap img { height: 40px; width: auto; border-radius: 4px; }
+    .logo-text strong { display: block; color: #fff; font-size: 1rem; font-weight: 700; line-height: 1.2; }
+    nav { display: flex; align-items: center; gap: 28px; }
+    nav a { color: rgba(255,255,255,0.8); font-size: 0.875rem; font-weight: 500; transition: color 0.18s; }
+    nav a:hover { color: #fff; }
+    .header-tel {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--bleu-vif); color: #fff;
+      font-weight: 600; font-size: 0.9rem;
+      padding: 9px 18px; border-radius: 4px;
+      transition: background 0.18s; white-space: nowrap;
+    }
+    .header-tel:hover { background: var(--bleu-sombre); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; }
+    .mobile-nav { display: none; flex-direction: column; background: var(--noir); border-top: 1px solid rgba(255,255,255,0.1); }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { color: #94a3b8; font-size: 0.9rem; padding: 13px 28px; border-bottom: 1px solid rgba(255,255,255,0.06); font-weight: 500; transition: color 0.18s; }
+    .mobile-nav a:hover { color: #fff; }
+
+    /* PAGE MERCI */
+    .merci-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 28px 60px;
+      background: var(--gris-bg);
+    }
+    .merci-card {
+      background: #fff;
+      border: 1px solid var(--gris-bord);
+      border-radius: 8px;
+      padding: 56px 48px;
+      text-align: center;
+      max-width: 560px;
+      width: 100%;
+      box-shadow: 0 4px 24px rgba(37,99,235,0.07);
+    }
+    .merci-icon {
+      width: 72px; height: 72px;
+      background: var(--bleu-clair);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 28px;
+    }
+    .merci-card h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--noir);
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    .merci-card p {
+      color: var(--texte-doux);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .merci-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+    }
+    .btn-appel {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: var(--bleu-vif); color: #fff;
+      padding: 14px 32px; border-radius: 4px;
+      font-size: 1rem; font-weight: 700;
+      transition: background 0.2s;
+      width: 100%;
+      justify-content: center;
+    }
+    .btn-appel:hover { background: var(--bleu); }
+    .btn-retour {
+      display: inline-flex; align-items: center; gap: 7px;
+      color: var(--texte-doux);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .btn-retour:hover { color: var(--bleu-vif); }
+
+    /* FOOTER */
+    footer {
+      background: var(--noir);
+      color: #94a3b8;
+      padding: 48px 0 0;
+      border-top: 3px solid var(--bleu-vif);
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+    }
+    .footer-brand p { font-size: 0.85rem; color: #64748b; margin: 14px 0 18px; line-height: 1.7; }
+    .footer-tel-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--bleu-vif); color: #fff;
+      padding: 10px 18px; border-radius: 4px;
+      font-size: 0.85rem; font-weight: 700;
+      transition: background 0.2s;
+    }
+    .footer-tel-cta:hover { background: var(--bleu); }
+    .footer-col h4 { font-size: 0.8rem; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 8px; }
+    .footer-col ul a { color: #94a3b8; font-size: 0.85rem; transition: color 0.2s; }
+    .footer-col ul a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: #64748b;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .footer-bottom a { color: var(--bleu-vif); transition: color 0.2s; }
+    .footer-bottom a:hover { color: #fff; }
+
+    /* BOUTON FLOTTANT */
+    .btn-flottant {
+      position: fixed; bottom: 24px; right: 24px; z-index: 200;
+      display: flex; align-items: center; gap: 10px;
+      background: var(--bleu-vif); color: #fff;
+      padding: 14px 22px; border-radius: 50px;
+      font-weight: 700; font-size: 0.9rem;
+      box-shadow: 0 4px 20px rgba(37,99,235,0.4);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-flottant:hover { background: var(--bleu); transform: translateY(-2px); }
+    .pulse {
+      position: absolute; top: -4px; right: -4px;
+      width: 14px; height: 14px;
+      background: #22c55e; border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    @media (max-width: 1024px) {
+      .footer-top { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .logo-text { display: none; }
+      .header-inner { position: relative; justify-content: space-between; }
+      .header-tel {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .footer-top { grid-template-columns: 1fr; }
+      .merci-card { padding: 36px 24px; }
+      .btn-flottant .tel-label { display: none; }
+      .btn-flottant { padding: 16px; border-radius: 50%; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo-wrap" aria-label="Mon Plombier Déboucheur — Accueil">
+        <img src="logo.png" alt="Logo Mon Plombier Déboucheur" width="40" height="40" loading="eager" />
+        <div class="logo-text">
+          <strong>Mon Plombier Déboucheur</strong>
+        </div>
+      </a>
+      <nav aria-label="Navigation principale">
+        <a href="index.html#services">Services</a>
+        <a href="index.html#tarifs">Tarifs</a>
+        <a href="index.html#temoignages">Avis</a>
+        <a href="index.html#about">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="tel:0642561671" class="header-tel" aria-label="Appeler le 06 42 56 16 71">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>06 42 56 16 71</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html#services">Services</a>
+    <a href="index.html#tarifs">Tarifs</a>
+    <a href="index.html#temoignages">Avis</a>
+    <a href="index.html#about">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:0642561671" style="color:#fff;font-weight:700;background:var(--bleu-vif);padding:14px 28px;display:flex;align-items:center;gap:8px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      06 42 56 16 71
+    </a>
+  </nav>
+</header>
+
+<!-- PAGE MERCI -->
+<main>
+  <section class="merci-section">
+    <div class="merci-card">
+      <div class="merci-icon" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h1>Message bien reçu !</h1>
+      <p>Merci pour votre demande. Nous vous répondons dans les plus brefs délais (en journée, réponse sous 5 minutes).<br />Pour une urgence, appelez-nous directement — nous intervenons 24h/24 et 7j/7.</p>
+      <div class="merci-actions">
+        <a href="tel:0642561671" class="btn-appel">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Urgence : 06 42 56 16 71
+        </a>
+        <a href="index.html" class="btn-retour">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          Retour à l'accueil
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-wrap">
+          <img src="logo.png" alt="Mon Plombier Déboucheur" width="36" height="36" loading="lazy" style="border-radius:4px;" />
+          <div class="logo-text">
+            <strong>Mon Plombier Déboucheur</strong>
+          </div>
+        </div>
+        <p>Votre plombier de confiance en Bretagne et Pays de la Loire. Intervention rapide 24h/24, 7j/7 pour tous vos problèmes de plomberie et débouchage.</p>
+        <a href="tel:0642561671" class="footer-tel-cta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Urgence : 06 42 56 16 71
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#tarifs">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Départements</h4>
+        <ul>
+          <li><a href="plombier-deboucheur-ille-et-vilaine.html">Ille-et-Vilaine (35)</a></li>
+          <li><a href="plombier-deboucheur-finistere.html">Finistère (29)</a></li>
+          <li><a href="plombier-deboucheur-cotes-darmor.html">Côtes-d'Armor (22)</a></li>
+          <li><a href="plombier-deboucheur-morbihan.html">Morbihan (56)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Région</h4>
+        <ul>
+          <li><a href="plombier-deboucheur-loire-atlantique.html">Loire-Atlantique (44)</a></li>
+          <li><a href="plombier-deboucheur-mayenne.html">Mayenne (53)</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="politique-cookies.html">Politique de cookies</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Mon Plombier Déboucheur. Tous droits réservés.</span>
+      <span>Plombier & Déboucheur — Bretagne & Pays de la Loire</span>
+    </div>
+  </div>
+</footer>
+
+<!-- BOUTON FLOTTANT -->
+<a href="tel:0642561671" class="btn-flottant" aria-label="Appeler le 06 42 56 16 71 — urgence plomberie">
+  <div class="pulse" aria-hidden="true"></div>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.32h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  <span class="tel-label">06 42 56 16 71</span>
+</a>
+
+<script>
+  // Header hamburger
+  var ham = document.getElementById('hamburger');
+  var nav = document.getElementById('mobileNav');
+  if (ham) {
+    ham.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      ham.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+
+</body>
+</html>

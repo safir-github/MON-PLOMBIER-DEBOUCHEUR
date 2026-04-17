@@ -33,10 +33,17 @@ www/                              (racine du site)
 ├── logs/                         ← DOSSIER À CRÉER (vide)
 │   └── .htaccess                 ← Protection logs
 │
+├── robots.txt                    ← SEO (moteurs de recherche)
+├── sitemap.xml                   ← SEO (plan du site)
+│
 ├── main.js                       ← JavaScript mis à jour
 │
 ├── index.html                    ← Accueil (2 formulaires)
 ├── contact.html                  ← Page contact
+├── merci.html                    ← Page remerciement
+│
+├── mentions-legales.html         ← Mentions légales (loi LCEN)
+├── politique-cookies.html        ← Politique cookies (RGPD)
 │
 ├── plombier-deboucheur-morbihan.html         ← Dépt 56
 ├── plombier-deboucheur-finistere.html        ← Dépt 29
@@ -78,10 +85,15 @@ www/                              (racine du site)
 ### 3. Transférer le backend
 - [ ] `api/process.php` → `www/api/`
 
-### 4. Transférer le frontend
+### 4. Transférer les fichiers SEO
+- [ ] `robots.txt` → `www/`
+- [ ] `sitemap.xml` → `www/`
+
+### 5. Transférer le frontend
 - [ ] `main.js` → `www/`
 - [ ] `index.html` → `www/`
 - [ ] `contact.html` → `www/`
+- [ ] `merci.html` → `www/`
 - [ ] `plombier-deboucheur-morbihan.html` → `www/`
 - [ ] `plombier-deboucheur-finistere.html` → `www/`
 - [ ] `plombier-deboucheur-ille-et-vilaine.html` → `www/`
@@ -89,7 +101,11 @@ www/                              (racine du site)
 - [ ] `plombier-deboucheur-mayenne.html` → `www/`
 - [ ] `plombier-deboucheur-cotes-darmor.html` → `www/`
 
-### 5. Transférer le fichier de test (optionnel)
+### 6. Transférer les pages légales
+- [ ] `mentions-legales.html` → `www/`
+- [ ] `politique-cookies.html` → `www/`
+
+### 7. Transférer le fichier de test (optionnel)
 - [ ] `test-formulaire.html` → `www/`
 
 ---

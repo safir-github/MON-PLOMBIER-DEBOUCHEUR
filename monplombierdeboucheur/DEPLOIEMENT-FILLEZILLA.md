@@ -25,8 +25,15 @@ monplombierdeboucheur/
 │
 ├── main.js                           ← JavaScript mis à jour
 │
+├── robots.txt                        ← SEO (moteurs de recherche)
+├── sitemap.xml                       ← SEO (plan du site)
+│
 ├── index.html                        ← Page d'accueil (2 formulaires)
 ├── contact.html                      ← Page contact (formulaire complet)
+├── merci.html                        ← Page remerciement après formulaire
+│
+├── mentions-legales.html             ← Mentions légales (loi LCEN)
+├── politique-cookies.html            ← Politique cookies (RGPD)
 │
 ├── plombier-deboucheur-morbihan.html         ← Page département 56
 ├── plombier-deboucheur-finistere.html         ← Page département 29
