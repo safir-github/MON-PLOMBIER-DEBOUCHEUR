@@ -2083,3 +2083,8 @@ section:has(.note-globale) {
 .mention-google {
   display: none !important;
 }
+
+/* ===== MASQUER SECTION TARIFS - Toutes les pages ===== */
+#tarifs {
+  display: none !important;
+}

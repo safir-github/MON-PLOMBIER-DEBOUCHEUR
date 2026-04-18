@@ -4,12 +4,11 @@
 A FAIRE :
 
 
+
+
+
+
 - favicon
-
-
-
-
-
 
 
 
@@ -41,6 +40,15 @@ FAIT :
 - header et footer des pages legales
 - corriger la page merci
 
+- masquer la section tarif
+- pour le long bouton laisser seulement "appelez nous" 
+- dans la section bleu, à la place de "contactez-nous", mettre "une urgence ?"
+- remplacer le service "débouchage wc" par "débouchage canalisation"
+
+
+
+
+
 
 
 
@@ -59,13 +67,10 @@ FAIT :
 ------------
 MISE A JOUR 
 
-index
-les 6 pages 
-main js 
-merci 
-pages legales 
-css
 
+css
+index
+les pages 
 
 
 
